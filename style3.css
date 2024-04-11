@@ -1,0 +1,90 @@
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.formulario {
+    margin: 30px auto;
+    /* Center horizontally with auto margins */
+    text-align: center;
+    /* Center content within the form */
+    background-color: teal;
+    padding: 40px;
+    box-sizing: border-box;
+    width: 50%;
+    /* Adjust width as needed */
+}
+
+
+h2 {
+    padding: 20px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+input {
+    padding: 5px;
+    width: 60px;
+}
+
+input[type="button"] {
+    width: auto;
+    background-color: rgb(225, 110, 68);
+    font-size: larger;
+    color: aliceblue;
+    border: none;
+    letter-spacing: 1px;
+}
+
+input[type="button"]:hover {
+    /* Styles applied on hover */
+    background-color: rgb(189, 87, 56);
+    /* Hover background color */
+    cursor: pointer;
+    /* Change cursor to indicate interaction */
+}
+
+.background-modal {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(171, 240, 240, 0.459);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+}
+
+.modal {
+    background-color: rgb(61, 95, 83);
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.resultado {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.red{
+    color: rgb(169, 30, 18);
+}
+
+.green{
+color: rgb(9, 174, 9);
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        display: flex;
+    }
+
+    100% {
+        opacity: 1;
+        display: flex;
+    }
+}
